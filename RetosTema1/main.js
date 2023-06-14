@@ -54,7 +54,7 @@ const connect = async()=>{
 
 
         // console.log(`---------Borrar-notas-de-más-de-10-años--------`);
-        // const sql_marks10 = `DELETE FROM marks WHERE date <= '2013-01-01';`;
+        // const sql_marks10 = `DELETE FROM marks WHERE timestampdiff(YEAR, date, curdate()) > 10;`;
         // const [result_marks10,data_marks10] = await connection.execute(sql_marks10);
         // console.log('Notas Actualizadas');
         // console.log(`-----------------------------------------------`);
