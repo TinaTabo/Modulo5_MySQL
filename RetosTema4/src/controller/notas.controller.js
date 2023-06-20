@@ -1,14 +1,14 @@
-const connection = require("../database");
+const {pool} = require("../database");
 
-function getMedia(){
+const getMedia = (req,res)=>{
     console.log('Obtenemos la nota media de un alumno');
 }
 
-function getAsignaturasAlumnos(){
+const getAsignaturasAlumnos = (req,res)=>{
     console.log('Obtenemos los alumnos y las asignaturas a las que estan apuntados');
 }
 
-function getAsignaturasProfesores(){
+const getAsignaturasProfesores = (req,res)=>{
     console.log('Obtenemos los profesores y las asignaturas que imparten');
 }
 
